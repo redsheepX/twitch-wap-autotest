@@ -2,8 +2,8 @@
 
 | 欄位 | 內容 |
 | --- | --- |
-| 狀態 | 實作進行中 - 完成交付文件與 Git 發布 |
-| 版本 | 0.5.9 |
+| 狀態 | 實作完成 - 等待最終驗收 |
+| 版本 | 0.6.0 |
 | 最後更新 | 2026-08-20 |
 | 實作閘門 | **未經需求方驗收本 SPEC，不得開始任何產品程式碼、測試程式碼或 CI 實作。** |
 | 原則優先序 | SDD + DDD + TDD + BDD；如有衝突，先更新並驗收本 SPEC，再變更實作。 |
@@ -191,7 +191,7 @@ artifacts/         # 本機 Evidence；不納入版本控制
 | TODO-011 | 需求方最終驗收實作 | 進行中 | 2026-08-18 | 三種 viewport 的 live E2E 已通過；等待需求方確認畫面與 batch 產物結構。僅需求方可更新為「已驗收」。 |
 | TODO-012 | 建立多裝置與 Evidence Batch 產物策略 | 已完成 | 2026-08-18 | 平行實測 batch `20260818T154112634756Z-2503f424` 已含 `pixel-7/`、`iphone/`、`samsung/` 各一張 Evidence；三個 worker 共用同一 run-id。 |
 | TODO-013 | 修正 linter error | 已完成 | 2026-08-19 | 已加入可重現的 Ruff 依賴與規則，修正 5 項靜態檢查錯誤；`ruff check src tests` 通過，快速測試 16/16 通過。 |
-| TODO-014 | 完成 requirements、README GIF 與 Git 發布 | 進行中 | 2026-08-20 | `requirements.txt` 已列出全部依賴；已產生 5 幀本機 Pixel 7 E2E GIF 並嵌入 README。Ruff 與快速測試均通過，正準備 commit 與 push。 |
+| TODO-014 | 完成 requirements、README GIF 與 Git 發布 | 已完成 | 2026-08-20 | `requirements.txt` 已列出全部依賴；README 已嵌入 5 幀本機 Pixel 7 E2E GIF；Ruff 與快速測試通過。實作已於 commit `ff3a538` 推送至 `origin/main`。 |
 
 ## 9. 變更紀錄
 
@@ -233,6 +233,7 @@ artifacts/         # 本機 Evidence；不納入版本控制
 | 2026-08-19 | 0.5.7 | 已加入 Ruff、修正 import 排序、`__all__` 排序與 mutable class attribute 註記；lint 與快速測試均通過。 | TODO-013 更新為已完成；TODO-011 維持進行中。 |
 | 2026-08-20 | 0.5.8 | 需求方要求確認 `requirements.txt`、README 本機測試 GIF，並授權在驗證後 commit 與 push。 | TODO-014 更新為進行中；TODO-011 維持進行中。 |
 | 2026-08-20 | 0.5.9 | 已確認依賴清單、產生並嵌入 5 幀本機 E2E GIF，且 Ruff 與快速測試通過；開始 Git 發布。 | TODO-014 維持進行中；TODO-011 維持進行中。 |
+| 2026-08-20 | 0.6.0 | commit `ff3a538` 已成功推送至 `origin/main`；交付文件與發布完成。 | TODO-014 更新為已完成；TODO-011 維持進行中。 |
 
 ## 10. 審核結論（由需求方填寫）
 
