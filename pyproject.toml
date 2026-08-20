@@ -1,0 +1,10 @@
+[tool.pytest.ini_options]
+addopts = "-ra"
+pythonpath = ["src"]
+testpaths = ["tests"]
+markers = [
+    "e2e: requires Chrome, network access, and the live Twitch WAP site",
+]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "RUF"]
